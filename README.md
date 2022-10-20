@@ -7,3 +7,5 @@
 #### - Flyway
 #### - MySQL
 #### - RabbitMQ
+#### - Junit Test framework
+#### - SpringbootTest (TestRestTemplate)
