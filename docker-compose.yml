@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql
+    container_name: demo-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: demo-rabbitmq
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - rabbitmq_go_net
+
+networks:
+  rabbitmq_go_net:
+    driver: bridge

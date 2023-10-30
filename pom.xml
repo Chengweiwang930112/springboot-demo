@@ -5,16 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.4</version>
+		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.check24</groupId>
+	<groupId>com.demo</groupId>
 	<artifactId>coding</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coding</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>2.7.4</version>
+			<version>3.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
-			<version>2.7.4</version>
+			<version>3.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
@@ -53,12 +53,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
-			<version>2.7.4</version>
+			<version>3.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-integration</artifactId>
-			<version>2.7.4</version>
+			<version>3.1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.integration</groupId>
@@ -81,6 +81,11 @@
 			<artifactId>junit-jupiter-api</artifactId>
 			<version>5.9.0</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
 		</dependency>
 	</dependencies>
 

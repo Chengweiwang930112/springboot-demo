@@ -1,9 +1,8 @@
 package com.demo.coding.infrastructure.model;
 
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Entity(name = "user")
 @Data
